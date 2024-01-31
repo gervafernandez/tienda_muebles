@@ -1,0 +1,36 @@
+/* Definición de fuentes del proyecto */
+
+@font-face {
+  font-family: "Raleway";
+  src: url(/fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url(/fonts/Lato/Lato-Regular.ttf);
+}
+
+/* Estilos Globales */
+
+h1 {
+  font-family: "Raleway";
+  font-size: 42px;
+  text-align: center;
+  margin: 50px;
+}
+
+h1 span {
+  color: #45b1e8;
+  font-weight: bolder;
+}
+
+h2,
+h3 {
+  font-family: "Raleway";
+  font-size: 24px;
+}
+
+p {
+  font-family: "Lato";
+  font-size: 15px;
+}
