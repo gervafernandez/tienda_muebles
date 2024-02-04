@@ -12,25 +12,77 @@
 
 /* Estilos Globales */
 
-h1 {
-  font-family: "Raleway";
-  font-size: 42px;
-  text-align: center;
-  margin: 50px;
-}
-
-h1 span {
-  color: #45b1e8;
-  font-weight: bolder;
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Lato";
+  font-size: 15px;
 }
 
 h2,
 h3 {
   font-family: "Raleway";
   font-size: 24px;
+  text-align: center;
 }
 
 p {
   font-family: "Lato";
   font-size: 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Header */
+
+.nombre-sitio {
+  font-family: "Raleway";
+  font-size: 42px;
+  text-align: center;
+  margin: 50px;
+}
+
+.nombre-sitio span {
+  color: #45b1e8;
+  font-weight: bolder;
+}
+
+/** Menú de navegación principal **/
+
+/* La clase CONTENEDOR-NAVEGACION crea un contenedor con todos los elementos de la barra de navegación para poder modificar su borde superior */
+.contenedor-navegacion {
+  border-top: 1px solid #e1e1e1;
+}
+
+/* La clase NAVEGACION centra los elementos del menú de navegación */
+.navegacion {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Clase CONTENEDERO permite centrar contenido en el navegador 
+Los vamos a usar también para centrar los elementos de LISTADO-CATEGORIAS*/
+.contenedor {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+/* Imagen fondo HERO */
+
+.hero {
+  background-image: url(/img/principal.jpg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Display sección CATEGORÍA DE PRODUCTOS */
+
+.listado-categorias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
