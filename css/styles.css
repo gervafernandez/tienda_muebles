@@ -33,9 +33,10 @@ p {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
-/* Header */
+/* Formato del H1 del Header */
 
 .nombre-sitio {
   font-family: "Raleway";
@@ -52,19 +53,22 @@ img {
 /** Menú de navegación principal **/
 
 /* La clase CONTENEDOR-NAVEGACION crea un contenedor con todos los elementos de la barra de navegación para poder modificar su borde superior */
+
 .contenedor-navegacion {
   border-top: 1px solid #e1e1e1;
 }
 
-/* La clase NAVEGACION centra los elementos del menú de navegación */
+/* La clase NAVEGACION centra los elementos del menú de navegación usando FLEX */
+
 .navegacion {
   padding: 20px 0px;
   display: flex;
   justify-content: space-around;
 }
 
-/* Clase CONTENEDERO permite centrar contenido en el navegador 
+/* Clase CONTENEDEOR permite centrar contenido en el navegador 
 Los vamos a usar también para centrar los elementos de LISTADO-CATEGORIAS*/
+
 .contenedor {
   max-width: 1200px;
   margin: 0px auto;
@@ -79,10 +83,26 @@ Los vamos a usar también para centrar los elementos de LISTADO-CATEGORIAS*/
   background-size: cover;
 }
 
-/* Display sección CATEGORÍA DE PRODUCTOS */
+/** Sección CATEGORÍA DE PRODUCTOS **/
+
+/* Display sección CATEGORÍA DE PRODUCTOS usando GRID*/
 
 .listado-categorias {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+
+.categoria a {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  font-size: 15px;
+}
+
+.categoria a:hover {
+  background-color: #45b1e8;
+  color: white;
+  font-weight: bold;
+  border-bottom-right-radius: 10px;
 }
