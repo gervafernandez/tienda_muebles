@@ -35,7 +35,8 @@ p {
 
 img {
   max-width: 100%;
-  display: blockcº;
+  max-height: 100%;
+  display: block;
 }
 
 /* Formato del H1 del Header */
@@ -112,4 +113,20 @@ Los vamos a usar también para centrar los elementos de LISTADO-CATEGORIAS*/
   color: white;
   font-weight: bold;
   border-bottom-right-radius: 1rem;
+}
+
+/* Sección SOBRE NOSOTROS */
+
+.sobre-nosotros {
+  background-image: linear-gradient(
+      to right,
+      transparent 50%,
+      #1d7aa8 50%,
+      #1d7aa8 100%
+    ),
+    url(../img/nosotros.jpg);
+  padding: 10rem 0;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 100%, 140rem;
 }
