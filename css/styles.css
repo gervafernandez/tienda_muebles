@@ -16,33 +16,35 @@ a {
   text-decoration: none;
   color: black;
   font-family: "Lato";
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
+h1,
 h2,
 h3 {
   font-family: "Raleway";
-  font-size: 24px;
+  font-size: 2.4rem;
   text-align: center;
+  margin: 0 0 5rem 0;
 }
 
 p {
   font-family: "Lato";
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 img {
   max-width: 100%;
-  display: block;
+  display: blockcº;
 }
 
 /* Formato del H1 del Header */
 
 .nombre-sitio {
   font-family: "Raleway";
-  font-size: 42px;
+  font-size: 4.2rem;
   text-align: center;
-  margin: 50px;
+  margin: 5rem;
 }
 
 .nombre-sitio span {
@@ -61,7 +63,7 @@ img {
 /* La clase NAVEGACION centra los elementos del menú de navegación usando FLEX */
 
 .navegacion {
-  padding: 20px 0px;
+  padding: 2rem 0rem;
   display: flex;
   justify-content: space-around;
 }
@@ -71,16 +73,17 @@ Los vamos a usar también para centrar los elementos de LISTADO-CATEGORIAS*/
 
 .contenedor {
   max-width: 1200px;
-  margin: 0px auto;
+  margin: 0rem auto;
 }
 
 /* Imagen fondo HERO */
 
 .hero {
   background-image: url(/img/principal.jpg);
-  height: 600px;
+  height: 60rem;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
 }
 
 /** Sección CATEGORÍA DE PRODUCTOS **/
@@ -90,19 +93,23 @@ Los vamos a usar también para centrar los elementos de LISTADO-CATEGORIAS*/
 .listado-categorias {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 2rem;
+}
+
+.categorias {
+  padding-top: 5rem;
 }
 
 .categoria a {
   display: block;
   text-align: center;
-  padding: 15px;
-  font-size: 15px;
+  padding: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .categoria a:hover {
   background-color: #45b1e8;
   color: white;
   font-weight: bold;
-  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 1rem;
 }

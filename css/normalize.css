@@ -11,6 +11,8 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1REM = 10px */
 }
 
 /* Sections
