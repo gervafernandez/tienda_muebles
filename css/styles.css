@@ -118,15 +118,36 @@ Los vamos a usar también para centrar los elementos de LISTADO-CATEGORIAS*/
 /* Sección SOBRE NOSOTROS */
 
 .sobre-nosotros {
-  background-image: linear-gradient(
-      to right,
-      transparent 50%,
-      #1d7aa8 50%,
-      #1d7aa8 100%
-    ),
-    url(../img/nosotros.jpg);
-  padding: 10rem 0;
-  background-position: left center;
+  min-height: 300px;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.grid-sobrenosotros {
+  min-height: 300px;
+  background-color: #2377a1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.img_sobrenosotros {
+  background-image: url(/img/nosotros.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: 100%, 140rem;
+  background-position: 0 -8rem;
+}
+
+.txt_sobrenosotros h2,
+p {
+  color: white;
+  text-align: left;
+  margin-left: 5rem;
+  margin-right: 2rem;
+}
+
+.txt_sobrenosotros h2 {
+  margin-top: 8rem;
+}
+
+.txt_sobrenosotros p {
+  margin-bottom: 2rem;
 }
